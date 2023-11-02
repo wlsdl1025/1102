@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 해답</title>
+    <style>
+        body {
+            background: #222;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #container {
+            width: 900px;
+            margin: 0 auto;
+            height: 100%;
+            background: white;
+        }
+
+        #left{
+            width: 300px;
+            background: #ddd;
+            height: 100%;
+            float: left;
+        }
+
+        .innerleft {
+            margin: 0px 50px 0px 50px;
+            /* 이미지 크기를 보면 200*228 사이즈 이므로  마진값을 50정도 만큼 줘서 간격조절 */
+            width: 200px;
+            padding-top: 20px;
+            /* 이값들을 줘야 left에 오는 글씨랑 이미지가 가운데로 모임 */
+        }
+
+        h1 {
+            font-variant: small-caps;
+            /* 스몰캡스-> 작은 대문자 */
+        }
+
+        .cls001 {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .cls002 {
+            font-size: 14px;
+            line-height: 2.8;
+            margin-top: 120px;
+        }
+
+        #right {
+            width: 600px;
+            height: 100%;
+            float: right;
+            box-sizing: border-box;
+            padding: 80px;
+        }
+        .cls003 {
+            font-variant: normal;
+            margin: 0;
+            /* h2가 블락태그이므로 여백을 없애기 위해서 마진값을 0으로 줘야함 */
+        }
+        .cls004 {
+            font-size: 14px;
+            line-height: 2.0;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        hr {
+            border: 1px dotted gray;
+            margin-left: -50px;
+            width: 500px;
+            margin-bottom: 40px;
+        }
+
+        .cls005 {
+            margin-top: 40px;
+
+        }
+
+        li {
+            font-size: 14px;
+            line-height: 2.0;
+        }
+        .cls006 {
+            margin-left: -40px;
+            margin-bottom: 40px;
+        }
+
+        .cls007 {
+            margin-bottom: 50px;
+        }
+
+        table {
+            width: 350px;
+            height: 90px;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            text-align: center;
+            margin: -30px auto 40px 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            height: 30px;
+        }
+        th {
+            background: #dbf8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <div class="innerleft">
+                <!-- innerleft를 준 이유가 가장 중요함 -->
+            <img src="pf.jpg" alt="고경희 프로필 사진" >
+            <h1>Kyunghee Ko</h1>
+                <p class="cls001">오늘은 남은 인생이 시작되는<br>
+                    첫째날
+                </p>
+                <p class="cls002">
+                    jeju, Korea <br>
+                    funcom@gmail.com
+                </p>
+                <h3>SNS</h3>
+            </div>
+
+        </div>
+
+        <div id="right">
+            <h2 class="cls003">
+                Who am I?
+            </h2>
+            <p class="cls004">
+                <mark>프론트엔드 앱 기술(Font-end Web Tech)</mark>에 관심이 많습니다.<br>
+                현재 제주의 한 시골 마을에서 코딩 중입니다.
+            </p>
+            <hr>
+            <h2 class="cls005">
+                Experiance
+            </h2>
+
+            <ul class="cls006">
+                <li>프론트엔드 개발
+                    <ul>
+                        <li>업무 내용 업무 내용 업무 내용</li>
+                        <li>업무 내용 업무 내용</li>
+                        <li>업무 내용 </li>
+                    </ul>
+                </li>
+
+                <li>웹 디자인
+                    <ul>
+                        <li>업무 내용 업무 내용</li>
+                        <li>업무 내용</li>
+                    </ul>
+
+                </li>
+            </ul>
+            <hr>
+            <h2 class="cls007">
+                Skills
+            </h2>
+            <hr>
+            <h2 class="cls007">
+                Education
+            </h2>
+            <table>
+                <caption>학력 사항</caption>
+                <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>구분</th>
+                </tr>
+                <tr>
+                    <td>ㅁㅁ대학교</td>
+                    <td>컴퓨터공학</td>
+                    <td>2004.3~2008.2</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>ooo고등학교</td>
+                    <td>-</td>
+                    <td>2001.3~2004.2</td>
+                    <td>졸업</td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+
+    </div>
+    
+</body>
+</html>
